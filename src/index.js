@@ -1,14 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import {Router, browserHistory} from 'react-router'
-import Routes from './routes'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'leaflet/dist/leaflet.css';
+import "./App.css";
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-// import registerServiceWorker from './registerServiceWorker';
-
-ReactDOM.render(
-<Router
-history={browserHistory}
-routes={Routes}
-/>, 
-document.getElementById('root'));
-// registerServiceWorker();
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
